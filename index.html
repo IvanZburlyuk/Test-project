@@ -15,7 +15,9 @@
 	
 </head>
 <body>
-	<header class="pod_menu">
+	<header>
+		<div  class="pod_menu">
+
 		<ul>
 			<li><a class="xabr" href="https://habr.com/ru/">Хабр</a></li>
 			<li><a href="https://habr.com/ru/flows/geektimes/">Geektimes</a></li>
@@ -30,7 +32,8 @@
 			<li><a class="a_post" href="https://habr.com/ru/article/433778/">Алюминиевый пост</a></li>
 			<li><a class="maind_play" href="https://habr.com/ru/article/440996/">Мозг играет</a></li>
 		</ul>
-	</header>
+		</div>
+	
 	<section>
 	<div class="container">
 				<div class="nav">
@@ -62,8 +65,24 @@
 			<hr class="line-bottom_menu">
 		</section>
 		<section class="container" >
-			<h1 class="sub_menu">Все потоки <i class="fa fa-chevron-down" aria-hidden="true"></i></h1>
-		<ul class="publications_choice" >
+			<div class="drop_head_menu">
+			<ul class="sub_menu">
+			<li class="menu__header"> Все потоки <i class="fa fa-chevron-down" aria-hidden="true"></i>
+					<ul class="sub_menu_drop" id="menu_hiden">
+							<li><a href="#">Разработка</a></li>
+							<li><a href="#">Администрирование</a></li>
+							<li><a href="#">Дизайн</a></li>
+							<li><a href="#">Управление</a></li>
+							<li><a href="#">Маркетинг</a></li>
+							<li><a href="#">Гиктаймс</a></li>
+							<li><a href="#">Разное</a></li>
+						</ul>
+					</li>
+				
+		</ul>
+		</div>
+		
+			<ul class="publications_choice" >
 			<li ></li> <a class="active" href="https://habr.com/ru/top/">лучшие</a>	</li>
 			<li> <a class="all_rows" href="">все подряд</a> </li>
 		</ul>
@@ -75,6 +94,7 @@
 			<li class="menu_item"><a href="https://habr.com/ru/top/yearly/">Год</a></li>
 		</ul>
 		</section>
+		</header>
 
 		<section class="container grid_continer">
 			<div class="post_user_info">
@@ -327,7 +347,10 @@
 				<div>
 			</div>
 			</div>
-			<div class="sidebare sidebare_fixed fixed">
+
+
+			
+			<div class="sidebare sidebare_fixed">
 					<h1 class="left_heading" >Читают сейчас</h1>
 					<ul class="list_block_3">
 						<li><a href="https://habr.com/ru/post/442484/">Чем светит Dragon Crew Роскосмосу</a> <br>
@@ -449,8 +472,24 @@
 									</ul>	
 									
 							</div>
+							<div class="scrollTop"></div>
 </footer>
+
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
+
+
+
+/*font-family: 'Fira Sans', sans-serif;
+
+#929ca5;
+
+#4697ca;
+
+#464646;
+
+#548eaa;*/

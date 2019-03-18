@@ -153,17 +153,62 @@ color: #4697ca;
 .sub_menu {
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 500;
-	font-size: 150%;
+	font-size: 180%;
 	margin-bottom: 3.5rem;
+	display: block;
+	padding-top: 70px;
+	padding-left: 0px;
+	color: #464646;
+	cursor: pointer;
 }
 
 .sub_menu:hover {
 	color: #4697ca;
 }
 
-h1 .fa-chevron-down{
-	font-size: 14px;
+li i.fa.fa-chevron-down{
+	font-size: 16px;
 	color: #4697ca;
+}
+
+.sub_menu_drop{
+	background: #fff;
+	box-shadow: 1px 1px 1px 1px; 
+	padding: 15px 0px;
+	width: 220px;	
+	display: flex;
+	flex-direction: column;
+	
+}
+
+#menu_hiden{
+	display: none;
+}
+.sub_menu_drop a {
+	font-size: 65%;
+	margin: 20px 0;
+	color: #464646;
+}
+.sub_menu_drop li{
+	padding-left: 15px;
+	
+}
+
+.sub_menu_drop a:hover {
+	color: #548eaa;
+}
+
+
+.sub_menu_drop li:hover {
+	background: #ccf5ff;
+	box-sizing: border-box;
+	z-index: 99;
+	padding: 10px -10px;
+
+}
+
+.sub_menu_drop li{
+	display: block;
 }
 
 
@@ -484,6 +529,10 @@ a.activ {
 	color: #548eaa;	
 }
 
+.sidebare_fixed{
+	width: 336px;
+}
+
 
 .list_block_3{
 	display: block;
@@ -587,7 +636,7 @@ li .fa-twitter{
 	background: #39AECF;
 	padding: 12px 14px;
 	color: #fff;
-	border: 1px solid ##39AECF;
+	border: 1px solid #39AECF;
 	border-radius: 3px;
 	font-size: 20px;
 }
@@ -645,13 +694,33 @@ li .fa-arrow-right{
 }
 
 
+.scrollTop {
+	position: fixed;
+	bottom: 50px;
+	left: 200px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #cccccc;
+	border: 2px solid #e6faff;;
+	z-index: 100;
+	cursor: pointer;
+}	
 
-font-family: 'Fira Sans', sans-serif;
 
-#929ca5;
+.scrollTop:after {
+	content: '';
+	width: 8px;
+	height: 8px;
+	border-top: 2px solid #fff;
+	border-left: 2px solid #fff;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 4px ;
+	bottom: 0;
+	left: 0 ;
+	right: 0;
+	margin: auto;
+}
 
-#4697ca;
 
-#464646;
-
-#548eaa;
